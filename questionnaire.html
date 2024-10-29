@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questionnaire</title>
+    </head>
+    <body>
+        <h1>How's your day been form</h1>
+        <hr>
+        <!-- form with action (submission location) and method (post for sensitive data) -->
+        <!-- encryption for possibility of large files (image) – splitting answer and combining back after receiving -->
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <!-- label can point to an input field with the id specified in for attribute -->
+            <!-- inputs are text by default -->
+            <label for="username">username:</label>
+            <input type="text" id="username" required>
+            <br>
+
+            <label for="password">password:</label>
+            <input type="text" id="password" minlength="8" maxlength="20" required>
+            <br>
+
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="kevin@gmail.com">
+            <br>
+            <br>
+
+
+            <label for="date">today's date:</label>
+            <input type="date" id="date" required>
+            <br>
+
+            <label for="goodday">has your day been good so far?</label>
+            <input type="checkbox" id="goodday">
+            <br>
+            
+            <label for="meal">rate your most recent meal:</label>
+            <input type="number" id="meal" placeholder="5" min="1" max="10" value="5">
+            <br>
+
+            <label>how was your sleep today?</label>
+            <br>
+            <input type="radio" id="goodsleep" value="good" name="sleep">
+            <label for="goodsleep">restoring</label><br>
+            <input type="radio" id="avgsleep" value="average" name="sleep">
+            <label for="goodsleep">needed more</label><br>
+            <input type="radio" id="badsleep" value="bad" name="sleep">
+            <label for="goodsleep">woke up tired</label><br>
+
+            <label for="activity">select your focus activity today:</label>
+            <select id="activity">
+                <option value="study">study</option>
+                <option value="work">work</option>
+                <option value="relax">relax</option>
+                <option value="entertainment">entertainment</option>
+            </select>
+            <br>
+
+
+            <br>
+            <label for="phone">phone number:</label>
+            <input type="tel" id="phone" placeholder="0 7867 432 664" pattern="0 [0-9]{4} [0-9]{3} [0-9]{3}">
+            <br>
+
+            <label for="postcode">postcode:</label>
+            <input type="text" id="postcode" placeholder="2345" minlength="4" maxlength="7">
+            <br>
+            <br>
+
+            <label for="sunset">picture of a sunset:</label>
+            <input type="file" id="sunset" accept="image/png, image/jpeg">
+            <br>
+
+            <label for="address">full address for giveaway:</label><br>
+            <textarea id="address" rows="4" cols="30"></textarea>
+            <br>
+
+            <input type="reset">
+            <br>
+            <br>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>

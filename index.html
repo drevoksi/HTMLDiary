@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to HTML Dictionary</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+        <!-- <link rel="mask-icon" type="image/png" sizes="16x16" href="images/favicon16.png" color="#000000"> -->
+    </head>
+    <body>
+        <header style="background-color: blanchedalmond;">
+            <h1>HTML Dictionary</h1>
+            <h3>Welcome to my first website! Look through the following webpages:</h3>
+
+            <a href="lyrics.html">Unwritten – Lyrics </a>
+            •
+            <a href="richard.html">About my cat</a>
+            •
+            <a href="music.html">My music list</a>
+            •
+            <a href="zelda.html">The Legend of Zelda</a>
+            •
+            <a href="questionnaire.html">Fill the questionnaire</a>
+            •
+            <a href="stylesheets.html">About CSS</a>
+            <br>
+            <br>
+            <hr>
+        </header>
+        <main>
+            <div>
+                <p>Headings:</p>
+                <h1>h1 Heading</h1>
+                <h2>h2 Heading</h2>
+                <h3>h3 Heading</h3>
+                <h4>h4 Heading</h4>
+                <h5>h5 Heading</h5>
+            </div>
+            <hr>
+            <div>
+                <p>Paragraphs:</p>
+                <p>Type lorem and tab to fill with text:</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum officia magnam voluptate debitis a voluptatibus. Porro nulla, vel nostrum expedita facilis, quae nemo alias nihil eum quisquam rem odit quo?</p>
+                <!-- This does take into account the indentation -->
+                <pre>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            Corporis aliquam a architecto iure rerum necessitatibus laudantium neque 
+            ipsum perspiciatis dolorem reprehenderit, 
+
+            quidem magnam, 
+
+            deleniti voluptatem excepturi ad nulla dolores voluptas.
+                </pre>
+
+                <br>
+                I can also write without any elements, similarly how plain text is accepted in tag 'a' or list elements
+                <br>
+                But this will not be wrapped in a paragraph
+                <br>
+            </div>
+            <hr>
+            <div>
+                <p>Self-closing tags:</p>
+                <p>&ltbr&gt – line break</p>
+                <p>&lthr&gt – horizontal rule – line</p>
+            </div>
+            <hr>
+            <div>
+                <p>This is normal text</p>
+                <p>This is <b>bold</b> text</p>
+                <p>This is <i>italic</i> text</p>
+                <p>This is <u>underlined</u> text</p>
+                <p>This is <del>crossed out</del> text</p>
+                <p>This is <big>big</big> text</p>
+                <p>This is <small>small</small> text</p>
+                <p>This is <sub>subscript</sub> text</p>
+                <p>This is <sup>superscript</sup> text</p>
+                <p>This is <mark>highlighted</mark> text</p>
+                <!-- The styles are shown as strings but they are processed 
+                 just like all the code – it all comes from text -->
+                <p>This <mark style="background-color: aquamarine;">highlighted</mark> text uses a bit of CSS</p>
+            </div>
+            <hr>
+            <div>
+                <p>There are two types of containers that can group elements together</p>
+                <p>Span is inline, while div is a block container:</p>
+                <h4><span style="background-color: tomato;">This is span heading</span></h4>
+                <h4><div style="background-color: turquoise;">This is div heading</div></h4>
+                <p>Lorem ipsum <span style="background-color: tomato;">dolor sit amet consectetur adipisicing elit.</span> Facilis quae hic commodi veniam ut obcaecati, <div style="background-color: turquoise;">explicabo odit accusamus aliquid placeat non,</div> id esse cupiditate laborum deserunt nulla error consequuntur tenetur.</p>
+            </div>
+            <hr>
+            <div>
+                <p>There are three types of lists:</p>
+    
+                <!-- Unordered List (ul) with List Item (li) and nested lists -->
+                <h4>Groceries – Unordered</h4>
+                <ul>
+                    <li>muffins</li>
+                    <li>cocoa</li>
+                    <li>milk</li>
+                    <li>seasonings:</li>
+                    <ul>
+                        <li>ketchup</li>
+                        <li>pepper</li>
+                        <li>mustard</li>
+                    </ul>
+                </ul>
+    
+                <!-- Ordered List (ul) -->
+                <h4>How to change desktop background – Ordered</h4>
+                <ol>
+                    <li>Open System Settings</li>
+                    <li>Go to Wallpaper section</li>
+                    <li>Choose the wallpaper that suits you</li>
+                </ol>
+    
+                <!-- Description List (dl) with Terms (dt) and Definitions (dd) -->
+                <h4>Dungeons and Dragons classes – Description</h4>
+                <dl style="background-color: khaki; border: 2px solid;">
+                    <dt>druid</dt>
+                    <dd>relies on power of nature</dd>
+    
+                    <dt>paladin</dt>
+                    <dd>tanky combatant</dd>
+    
+                    <dt>ranger</dt>
+                    <dd>hunter that wears light armor and attacks from distance</dd>
+    
+                    <dt>wizard</dt>
+                    <dd>studies and uses magic in combat</dd>
+                </dl>
+            </div>
+            <hr>
+            <div>
+                <p>Here is a table example as opening times for a cafe:</p>
+                <a href="timetable.html">time table</a>
+            </div>
+            <hr>
+            <div>
+                <p>This is a button example:</p>
+                <a href="https://www.instagram.com/uniofstandrews?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <button style="font-size: 25px; background-color:mistyrose; color: sienna; border-radius: 10px;">follow St Andrews</button>
+                </a>
+    
+                <p>Buttons can also execute JavaScript, more on this later</p>
+                <!-- Button executing a script -->
+                <p id="blocks"></p>
+                <button onclick="addBlock()">Add Block</button>
+                <script>
+                    function addBlock() {
+                        // Can already see lots of functions here
+                        document.getElementById("blocks").innerHTML += "[]";
+                    }
+                </script>
+            </div>
+            <hr>
+            <!-- This is a comment! -->
+            <div>
+                <p>Anything can be wrapped in a hyperlink</p>
+    
+                <a href="https://www.apple.com" target="_blank" title="tooltip">
+                    This is a hyperlink
+                </a>
+                <br>
+                <p>This uses the anchor (a) tag</p>
+            </div>
+
+        </main>
+
+        <footer style="background-color: papayawhip;">
+            <hr>
+            <image src="images/favicon.jpg" height="100">
+            <p>I hope you enjoyed it!</p>
+            <a href="mailto:drevoksi@gmail.com">Send an email to me</a> • drevoksi • 2024 • &copy;
+        </footer>
+    </body>
+</html>
