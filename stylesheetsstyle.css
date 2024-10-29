@@ -1,0 +1,9 @@
+/* this changes style of tags with id 'external' */
+#external {
+    background-color: lightgoldenrodyellow;
+}
+
+/* can also set styles of classes of objects */
+.odd {
+    border: indianred 2px solid;
+}

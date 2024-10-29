@@ -2,9 +2,32 @@
 <html>
     <head>
         <title>About CSS</title>
+        <!-- this tag applies style to all selected tags -->
+        <!-- it is written in CSS -->
+        <style>
+            body {
+                background-color: linen;
+            }
+
+            /* apply color to all paragraphs (unless overriden) */
+            p {
+                color:rgb(34, 20, 5);
+            }
+            #internal {
+                background-color: rgb(222, 182, 164);
+            }
+        </style>
+        <link rel="stylesheet" href="stylesheetsstyle.css">
     </head>
     <body>
         <h1>Learning CSS</h1>
         <p><b>CSS</b> stands for Cascading Style Sheets</p>
+        <p>It can be applied inline, internally or externally</p>
+
+        <p style="background-color:azure; color:midnightblue;" class="odd">Lorem inline ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum accusantium doloremque blanditiis consequuntur? Eos nesciunt necessitatibus perspiciatis nam odit. Odit eveniet laudantium non dicta enim libero eum mollitia voluptates!</p>
+        <p id="internal" class="even">Lorem internal ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum accusantium doloremque blanditiis consequuntur? Eos nesciunt necessitatibus perspiciatis nam odit. Odit eveniet laudantium non dicta enim libero eum mollitia voluptates!</p>
+        <p id="external" class="odd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum accusantium doloremque blanditiis consequuntur? Eos nesciunt necessitatibus perspiciatis nam odit. Odit eveniet laudantium non dicta enim libero eum mollitia voluptates!</p>
+
+        <p>External styles can be applied to multiple documents</p>
     </body>
 </html>
