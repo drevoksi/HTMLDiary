@@ -1,3 +1,14 @@
+/* load installed font */
+@font-face {
+    src: url("fonts/ClimateCrisis.ttf");
+    font-family: ClimateCrisis;
+}
+
+/* set style of tags */
+h1 {
+    font-stretch: ultra-condensed;
+}
+
 /* this changes style of tags with id 'external' */
 #external {
     background-color: lightgoldenrodyellow;
@@ -6,4 +17,25 @@
 /* can also set styles of classes of objects */
 .odd {
     border: indianred 2px solid;
+}
+
+.paragraph {
+    font-family: 'Lucida Console', Geneva;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+.title {
+    font-family: ClimateCrisis;
+    font-size: 4em
+}
+
+.box {
+    border-right: groove 3px rgb(28, 25, 25);
+    border-bottom: groove 3px rgb(28, 25, 25);
+    border-top: dotted 2px saddlebrown;
+    border-left: dotted 2px sandybrown;
+    border-bottom-right-radius: 20px;
 }

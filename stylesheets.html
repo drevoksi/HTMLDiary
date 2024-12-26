@@ -14,12 +14,18 @@
                 color:rgb(34, 20, 5);
             }
             h1 {
+                /* can use imported fonts */
+                font-family: 'Rubik';
                 background-color: peru;
+                font-stretch: ultra-expanded;
             }
             #internal {
                 background-color: rgb(222, 182, 164);
             }
         </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="stylesheetsstyle.css">
     </head>
     <body>
@@ -32,12 +38,25 @@
         <p id="external" class="odd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatum accusantium doloremque blanditiis consequuntur? Eos nesciunt necessitatibus perspiciatis nam odit. Odit eveniet laudantium non dicta enim libero eum mollitia voluptates!</p>
 
         <p>External styles can be applied to multiple documents</p>
+        
         <hr>
+
         <p style="color: tomato">Colour by name</p>
         <p style="color: rgb(202, 123, 123)">Colour by rgb</p>
         <p style="color: #08F1A0">Colour by hex</p>
         <p style="color: hsl(42, 79%, 57%)">Colour by hsl</p>
         <br>
         <p>In HSL, H is hue, S is saturation and L is lightness, where hue is measured in degrees on the colour circle</p>
+
+        <hr>
+
+        <p>Some fonts come with the browser, though best to add reservation font in case less popular don't</p>
+        <p style="font-family: Verdana, Arial;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus optio dicta quis? Sequi velit ducimus, assumenda repellendus dolorem dignissimos explicabo harum iste neque libero sunt quas repellat unde dolore.</p>
+        <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel sunt soluta, quaerat aspernatur esse voluptatem debitis placeat, repudiandae architecto sit impedit hic in repellat rerum quae vero voluptas cupiditate.</p>
+        <p class="title">Hello Universe</p>
+
+        <p>And paragraphs can have a border</p>
+
+        <h2 class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga labore quasi molestias illum eligendi expedita nulla, consequatur vel fugiat ullam commodi aliquam soluta delectus quae sequi blanditiis! Nihil, hic qui.</h2>
     </body>
 </html>
