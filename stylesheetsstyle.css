@@ -32,10 +32,21 @@ h1 {
     font-size: 4em
 }
 
-.box {
+.envelope {
     border-right: groove 3px rgb(28, 25, 25);
     border-bottom: groove 3px rgb(28, 25, 25);
     border-top: dotted 2px saddlebrown;
     border-left: dotted 2px sandybrown;
     border-bottom-right-radius: 20px;
+}
+
+#litup {
+    text-shadow: 3px 3px 3px rgb(0, 136, 255), -3px -3px 3px rgb(255, 74, 177)
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px;
 }
