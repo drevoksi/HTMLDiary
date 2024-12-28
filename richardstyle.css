@@ -1,0 +1,23 @@
+body {
+    padding: 8px;
+    border: solid 5px black;
+    display: flow-root;
+}
+
+h1 {
+    font-size: 3em
+}
+
+p {
+    font-size: 2em
+}
+
+#img1 {
+    float: left; 
+    margin-right: 8px;
+}
+
+#img2 {
+    float:right;
+    margin-left: 8px;
+}
