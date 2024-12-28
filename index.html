@@ -173,6 +173,25 @@
                 </script>
             </div>
             <hr>
+            <div>
+                <p>Overflowing content is managed via the 'overflow' property</p>
+                <!-- Auto either leaves it or makes it scrollable -->
+                <div style="height:180px; width:540px; border:double 5px gainsboro; overflow:auto">
+                    <p>Vestibulum eu leo viverra, semper ante eget, vestibulum est. Integer faucibus, leo eu dictum pretium, nulla ante fringilla urna, eget aliquet neque dui sit amet felis. Praesent eu erat mauris. Maecenas mollis velit id turpis tempus, nec sodales tortor pharetra. Nullam aliquam eleifend nisi non consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam accumsan, ipsum rutrum sodales rhoncus, nunc tortor porttitor quam, vitae blandit justo metus eu est. Nunc et condimentum tellus. Morbi eu urna et elit ornare dignissim. Quisque efficitur velit vitae purus congue, nec commodo purus porttitor. Integer et egestas lorem, vel egestas nisi.</p>
+                    <p>Maecenas tempor ex tellus, et tempor odio lobortis eu. Nam eu consequat nisi, vitae porttitor justo. Ut pellentesque pellentesque lectus, sed pulvinar risus lobortis non. Nulla pellentesque in neque quis tincidunt. Duis ultricies faucibus libero, vel pellentesque diam commodo sed. Etiam ultrices metus eu elementum malesuada. Praesent justo ligula, fermentum vel eros sed, tempor bibendum sem.</p>
+                </div>
+                <br>
+                <!-- Clip depends on the browser; Google allows it, but Safari doesn't -->
+                <div style="height:120px; width:540px; border:solid 2px black; overflow: clip; overflow-clip-margin: 20px;">
+                    <p>Donec et pellentesque turpis. Mauris tortor libero, efficitur eget rhoncus id, mattis quis nibh. Nulla facilisi. Curabitur eget quam dictum massa congue mollis sed ut ligula. Pellentesque faucibus nibh felis, ut aliquam leo consequat quis. Sed nec lorem quis lacus commodo egestas interdum nec erat. Mauris accumsan, lacus a ullamcorper blandit, libero felis cursus lacus, id posuere lectus enim a dui. In auctor pharetra velit, eu luctus lacus euismod vel. Fusce hendrerit vitae lorem vel vestibulum. Nam rhoncus dolor sed enim iaculis semper. Fusce arcu arcu, gravida ut varius quis, finibus a arcu.</p>
+                </div>
+                <br>
+                <!-- Hidden simply hides all overflow -->
+                <div style="height:80px; width:540px; border:solid 4px black; overflow: hidden;">
+                    <p>Etiam vel rhoncus metus. Cras ornare sem rutrum lorem sagittis, id lacinia lorem pretium. Donec ornare quis risus sollicitudin viverra. Duis eget sem a metus efficitur ultrices et ut enim. Donec eu tempor nunc. Vivamus nibh felis, porta eu venenatis elementum, consectetur eget risus. Quisque tempor tellus at velit facilisis fringilla. Maecenas sed congue purus, quis tristique nisl. Duis vitae facilisis ante. Ut rhoncus dui velit, porta aliquam lacus vehicula eu. Ut felis tellus, consequat a facilisis eget, facilisis non magna. Duis sit amet fringilla nisi, in ornare urna. Pellentesque vitae tincidunt sem. Duis tortor augue, tincidunt ut porta condimentum, tempor vel sapien. In mollis est laoreet semper scelerisque. Ut rutrum lorem pellentesque tincidunt feugiat.</p>
+                </div>
+            </div>
+            <hr>
             <!-- This is a comment! -->
             <div>
                 <p>Anything can be wrapped in a hyperlink</p>
