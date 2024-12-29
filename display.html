@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Display Property</title>
+        <style>
+            #block {
+                background-color: palegoldenrod;
+            }
+            #inline{
+                background-color: aquamarine;
+            }
+            #inlineblock{
+                width:  120px;
+                background-color: floralwhite;
+                display: inline-block;
+                text-align: center;
+            }
+            #none{
+                display: none;
+            }
+            .visual{
+                font-size:1.6em
+            }
+            .hidden{
+                visibility: hidden;
+            }
+            .example{
+                color:dimgray
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Display property</h1>
+        <p>Elements can be inline, blocks, or inline blocks</p>
+        <p>As explored before, div is a primary example of a block, and span – inline element</p>
+        <p>Block elements fill all available horizontal space, whereas inline elements act as part of a text paragraph with whitespaces in-between</p>
+        <div id="block" class="visual">This is a block</div>
+        <span id="inline" class="visual">This is inline</span>
+        <p>There is anoter way to display elements: as inline blocks, as long as they have fixed width set</p>
+        <p>It can be done by changing the 'display' property of elements</p>
+        <p class="example">This is a normal<span id="inlineblock" class="visual">paragraph</span>of text</p>
+        <p>... normally, spans would only allocate the minimal width with no ability to set this property</p>
+        <p>Display can also take the value of 'none'</p>
+        <p class="example">This is a normal <span id="none" class="visual"> paragraph</span>of text</p>
+        <p>... don't confuse it with 'visibility: hidden', just hiding the visual appearance:</p>
+        <p class="example">This is a normal<span id="inlineblock" class="visual hidden">paragraph</span>of text</p>
+    </body>
+</html>
