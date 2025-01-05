@@ -7,10 +7,46 @@ body {
     background-size: cover;
 }
 
-h1 {
+h1, p, h2, a {
+    font-family:Arial, Helvetica, sans-serif;
     background-color: white;
+    padding: 5px;
 }
 
-p {
-    background-color: white;
+a {
+    font-size: 2em;
+    width:360px;
+    height:60px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    /* subtract distance to centre */
+    transform: translate(-50%, -50%);
+}
+
+a:visited{
+    color:rgb(119, 106, 107);
+}
+a:hover{
+    color:rgb(12, 141, 255);
+    font-size:1.9em;
+}
+a:active{
+    color:rgb(255, 80, 100);
+}
+
+#info h2{
+    max-width: 320px;
+    text-align: center;
+}
+#info p{
+    width: 720px;
+    font-size:32px;
+    display: none;
+}
+#info:hover p{
+    display: block;
 }

@@ -12,6 +12,24 @@
                 box-sizing: border-box;
                 float: left;
             }
+            li {
+                max-width: 480px;
+            }
+            li:hover {
+                background-color: lightyellow;
+            }
+            li:not(:hover) {
+                color:darkslategray;
+            }
+            li:nth-child(1){ /* could also be odd and even */
+                font-style: italic;
+            }
+            .latin li:nth-child(odd) {
+                font-style:italic;
+            }
+            .latin li:nth-child(3n + 1) {
+                color:rgb(62, 145, 109)
+            }
         </style>
     </head>
     <body>
@@ -253,6 +271,23 @@
             <hr>
             <div>
                 <p>See the page about the <a href="display.html">display property of elements</a></p>
+            </div>
+            <hr>
+            <div>
+                <p>Random Latin words</p>
+                <ul class="latin">
+                    <li>statim (immediately; at once)</li>
+                    <li>divisim (separately)</li>
+                    <li>idem (the same word as mentioned before)</li>
+                    <li>singillatim (singly)</li>
+                    <li>jure (by law)</li>
+                    <li>scilicet (to wit; namely)</li>
+                    <li>ubique (everywhere)</li>
+                    <li>sic (thus)</li>
+                    <li>quondam (former; sometime; formerly)</li>
+                    <li>variorum (including the notes of earlier scholars or editors)</li>
+                </ul>
+                
             </div>
         </main>
 
