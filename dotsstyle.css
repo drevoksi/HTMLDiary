@@ -1,0 +1,16 @@
+body {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* can set to scroll together with content */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    background-color: white;
+}
+
+p {
+    background-color: white;
+}
