@@ -4,6 +4,15 @@
         <title>Welcome to HTML Dictionary</title>
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
         <!-- <link rel="mask-icon" type="image/png" sizes="16x16" href="images/favicon16.png" color="#000000"> -->
+        <style>
+            .box {
+                border: solid 2px black; 
+                width:25%;
+                padding:20px;
+                box-sizing: border-box;
+                float: left;
+            }
+        </style>
     </head>
     <body>
         <header style="background-color: blanchedalmond;">
@@ -190,12 +199,45 @@
                 <div style="height:80px; width:540px; border:solid 4px black; overflow: hidden;">
                     <p>Etiam vel rhoncus metus. Cras ornare sem rutrum lorem sagittis, id lacinia lorem pretium. Donec ornare quis risus sollicitudin viverra. Duis eget sem a metus efficitur ultrices et ut enim. Donec eu tempor nunc. Vivamus nibh felis, porta eu venenatis elementum, consectetur eget risus. Quisque tempor tellus at velit facilisis fringilla. Maecenas sed congue purus, quis tristique nisl. Duis vitae facilisis ante. Ut rhoncus dui velit, porta aliquam lacus vehicula eu. Ut felis tellus, consequat a facilisis eget, facilisis non magna. Duis sit amet fringilla nisi, in ornare urna. Pellentesque vitae tincidunt sem. Duis tortor augue, tincidunt ut porta condimentum, tempor vel sapien. In mollis est laoreet semper scelerisque. Ut rutrum lorem pellentesque tincidunt feugiat.</p>
                 </div>
+                <br>
+                <!-- And automatic height will make sure the text stays visible -->
+                <div style="height:20px; width:540px; background-color: black;"></div>
+                <div style="height:auto; width:540px; border:solid 4px black; padding: 20px; box-sizing: border-box;">
+                    <h1>Box</h1>
+                    <div style="height:5px; width: 100%; background-color: darkgrey;"></div>
+                    <p>Etiam vel rhoncus metus. Cras ornare sem rutrum lorem sagittis, id lacinia lorem pretium. Donec ornare quis risus sollicitudin viverra. Duis eget sem a metus efficitur ultrices et ut enim. Donec eu tempor nunc. Vivamus nibh felis, porta eu venenatis elementum, consectetur eget risus. Quisque tempor tellus at velit facilisis fringilla. Maecenas sed congue purus, quis tristique nisl. Duis vitae facilisis ante. Ut rhoncus dui velit, porta aliquam lacus vehicula eu. Ut felis tellus, consequat a facilisis eget, facilisis non magna. Duis sit amet fringilla nisi, in ornare urna. Pellentesque vitae tincidunt sem. Duis tortor augue, tincidunt ut porta condimentum, tempor vel sapien. In mollis est laoreet semper scelerisque. Ut rutrum lorem pellentesque tincidunt feugiat.</p>
+                </div>
+                <br>
+                <!-- box sizing property allows setting total size and placing elements together -->
+                <div style="float:none">
+                    <div class="box">
+                        <h2>Title One</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo beatae rerum recusandae fugit adipisci vel eos unde omnis, repudiandae temporibus sint voluptatibus odio et dolorem dicta nesciunt consequuntur eligendi pariatur?</p>
+                    </div>
+                    <div class="box">
+                        <h2>Title Two</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi veniam illo est, veritatis minima? Totam nobis ratione aspernatur impedit illo est reprehenderit. Saepe animi, sequi aliquam sed beatae suscipit.</p>
+                    </div>
+                    <div class="box">
+                        <h2>Title Three</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi veniam illo est, veritatis minima? Totam nobis ratione aspernatur impedit illo est reprehenderit. Saepe animi, sequi aliquam sed beatae suscipit.</p>
+                    </div>
+                    <div class="box">
+                        <h2>Title Four</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi veniam illo est, veritatis minima? Totam nobis ratione aspernatur impedit illo est reprehenderit. Saepe animi, sequi aliquam sed beatae suscipit.</p>
+                    </div>
+                </div>
+                <hr>
+                <div style="width: 25%; max-width: 500px; min-height: 12vh; border: solid 2px rgb(47, 31, 31); padding: 10px;">
+                    <h3 style="text-align: center;">This div has size limits</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim doloribus voluptatibus, nemo ad culpa quam, perferendis ut deserunt debitis amet laborum excepturi expedita dolore earum consequuntur totam architecto, numquam placeat!</p>
+                </div>
             </div>
             <hr>
             <div>
-                <p>Size can be set to automatic:</p>
-                <div style="border:solid 3px black; width:160px; height:auto;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate culpa, dolor quo, corrupti mollitia veniam laboriosam, esse ipsa vel minima sint atque perferendis facere maiores hic! Earum unde perferendis eligendi?</div>
+                <a href="positions.html"><p>Page about positions of elements on screen</p></a>
             </div>
+            <hr>
             <!-- This is a comment! -->
             <div>
                 <p>Anything can be wrapped in a hyperlink</p>
@@ -216,7 +258,7 @@
             <hr>
             <image src="images/favicon.jpg" height="100">
             <p>I hope you enjoyed it!</p>
-            <a href="mailto:drevoksi@gmail.com">Send an email to me</a> • drevoksi • 2024 • &copy;
+            <a href="mailto:drevoksi@gmail.com">Send an email to me</a> • drevoksi • 2024 • &copy
         </footer>
     </body>
 </html>
