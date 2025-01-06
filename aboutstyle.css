@@ -1,0 +1,33 @@
+h1::first-letter {
+    font-size: 1.2em;
+    font-style: italic;
+    color:rgb(94, 81, 29);
+}
+h1+p+p::first-line {
+    font-style: italic;
+}
+*::selection {
+    color: rgb(124, 81, 81);
+    background-color:rgb(255, 244, 232);
+}
+#features li::marker {
+    content:"🌘 ";
+    color:rgb(45, 45, 55);
+    color:rgb(83, 83, 156);
+}
+#classes::after{
+    content:"🍱"
+}
+#pclasses::after {
+    content:"💫";
+    font-size: 1.2em;
+}
+#links::after {
+    content:"🔗";
+}
+#lists::after {
+    content:"✅";
+}
+#padding::after {
+    content:"🈁";
+}
