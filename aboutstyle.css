@@ -1,7 +1,7 @@
 h1::first-letter {
     font-size: 1.2em;
     font-style: italic;
-    color:rgb(94, 81, 29);
+    color:rgb(164, 136, 45);
 }
 h1+p+p::first-line {
     font-style: italic;
@@ -16,18 +16,18 @@ h1+p+p::first-line {
     color:rgb(83, 83, 156);
 }
 #classes::after{
-    content:"🍱"
+    content:" 🍱"
 }
 #pclasses::after {
-    content:"💫";
+    content:" 💫";
     font-size: 1.2em;
 }
 #links::after {
-    content:"🔗";
+    content:" 🔗";
 }
 #lists::after {
-    content:"✅";
+    content:" ✅";
 }
 #padding::after {
-    content:"🈁";
+    content:" 🈁";
 }
