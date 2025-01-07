@@ -1,0 +1,25 @@
+.box {
+    border: solid 2px black; 
+    width:25%;
+    padding:20px;
+    box-sizing: border-box;
+    float: left;
+}
+li {
+    max-width: 480px;
+}
+li:hover {
+    background-color: lightyellow;
+}
+li:not(:hover) {
+    color:darkslategray;
+}
+li:nth-child(1){ /* could also be odd and even */
+    font-style: italic;
+}
+.latin li:nth-child(odd) {
+    font-style:italic;
+}
+.latin li:nth-child(3n + 1) {
+    color:rgb(62, 145, 109)
+}
