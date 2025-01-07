@@ -1,0 +1,105 @@
+@font-face {
+    src: url("../fonts/ClimateCrisis.ttf");
+    font-family: ClimateCrisis;
+}
+@font-face {
+    src: url("../fonts/Agitan.otf");
+    font-family: Agitan;
+}
+@font-face {
+    src: url("../fonts/Albert.otf");
+    font-family: Albert;
+}
+@font-face {
+    src: url(../fonts/Lato.ttf);
+    font-family: Lato;
+}
+
+header h1 {
+    font-family: Albert;
+    color: rgb(31, 99, 31);
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: albert;
+    font-size: 1.5em;
+    text-align: center;
+}
+.navbar li {
+    padding: 10px 40px;
+    display: inline-block;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.navbar a.active {
+    text-decoration: underline;
+}
+.navbar a:hover {
+    color: green;
+}
+
+body h1 {
+    font-family: Albert;
+}
+body h2 {
+    font-family: Lato;
+    color: darkslategray;
+    font-size: 1em;
+}
+body h1+h2 {
+    margin-top: -20px;
+}
+body p {
+    font-family: Lato;
+}
+
+main {
+    /* used to keep floating elements inside from overflowing */
+    max-width: 900px;
+    display: flow-root;
+    margin: auto auto;
+}
+aside, section, article {
+    box-sizing: border-box;
+    float: left;
+    padding: 8px;
+}
+aside {
+    width: 30%;
+}
+section {
+    width: 30%;
+}
+article {
+    width: 40%;
+}
+
+.fullimg {
+    width:100%
+}
+
+footer {
+    /* used to clear floating elements */
+    display: block;
+    clear: both;
+}
+footer {
+    font-family: Albert;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    aside, section, article {
+        max-width: 100%;
+    }
+}
