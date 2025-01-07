@@ -1,3 +1,45 @@
+header {
+    background-color: blanchedalmond;
+}
+footer {
+    background-color: papayawhip;
+}
+header, footer {
+    padding: 10px;
+}
+
+body {
+    margin: 0px;
+}
+main {
+    margin: 10px;
+}
+
+header h1 {
+    margin: 0px
+}
+.navbar ul {
+    list-style-type: none;
+    background-color: azure;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar li {
+    float: left
+}
+.navbar a {
+    color: teal;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: rgb(224, 250, 255);
+}
+
+
 .box {
     border: solid 2px black; 
     width:25%;
@@ -5,21 +47,22 @@
     box-sizing: border-box;
     float: left;
 }
-li {
+.exl li {
     max-width: 480px;
 }
-li:hover {
+.exl li:hover {
     background-color: lightyellow;
 }
-li:not(:hover) {
+.exl li:not(:hover) {
     color:darkslategray;
 }
-li:nth-child(1){ /* could also be odd and even */
+.exl li:nth-child(1){ /* could also be odd and even */
     font-style: italic;
 }
-.latin li:nth-child(odd) {
+.exl.latin li:nth-child(odd) {
     font-style:italic;
 }
-.latin li:nth-child(3n + 1) {
+.exl.latin li:nth-child(3n + 1) {
     color:rgb(62, 145, 109)
 }
+

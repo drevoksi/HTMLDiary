@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="indexstyle.css">
     </head>
     <body>
-        <header style="background-color: blanchedalmond;">
+        <header>
             <h1>HTML Dictionary</h1>
             <h3>Welcome to my first website! Look through the following webpages:</h3>
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li><a href="lyrics.html">Unwritten – Lyrics</a></li>
                     <li><a href="richard.html">About my cat</a></li>
@@ -21,7 +21,6 @@
                     <li><a href="dots.html">Dots</a></li>
                 </ul>
             </nav>
-            <hr>
         </header>
         <main>
             <div>
@@ -93,7 +92,7 @@
                 </div>
                 <p>The visualisation here doesn't work as intended becaue of margin collapsing, this needs to be disabled in style</p>
                 <p>For each direction elements have four lengths associated with them, that apply in order:</p>
-                <ul>
+                <ul class="exl">
                     <li>size</li>
                     <li>padding</li>
                     <li>border</li>
@@ -111,7 +110,7 @@
     
                 <!-- Unordered List (ul) with List Item (li) and nested lists -->
                 <h4>Groceries – Unordered</h4>
-                <ul>
+                <ul class="exl">
                     <li>muffins</li>
                     <li>cocoa</li>
                     <li>milk</li>
@@ -125,7 +124,7 @@
     
                 <!-- Ordered List (ul) -->
                 <h4>How to change desktop background – Ordered</h4>
-                <ol>
+                <ol class="exl">
                     <li>Open System Settings</li>
                     <li>Go to Wallpaper section</li>
                     <li>Choose the wallpaper that suits you</li>
@@ -133,7 +132,7 @@
     
                 <!-- Description List (dl) with Terms (dt) and Definitions (dd) -->
                 <h4>Dungeons and Dragons classes – Description</h4>
-                <dl style="background-color: khaki; border: 2px solid;">
+                <dl style="background-color: khaki; border: 2px solid;" class="exl">
                     <dt>druid</dt>
                     <dd>relies on power of nature</dd>
     
@@ -244,7 +243,7 @@
             <hr>
             <div>
                 <p>Random Latin words</p>
-                <ul class="latin">
+                <ul class="latin exl">
                     <li>statim (immediately; at once)</li>
                     <li>divisim (separately)</li>
                     <li>idem (the same word as mentioned before)</li>
@@ -266,8 +265,7 @@
             </div>
         </main>
 
-        <footer style="background-color: papayawhip;">
-            <hr>
+        <footer>
             <image src="images/favicon.jpg" height="100">
             <p>I hope you enjoyed it!</p>
             <a href="mailto:drevoksi@gmail.com">Send an email to me</a> • drevoksi • 2025 • &copy
