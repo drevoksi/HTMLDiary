@@ -1,0 +1,19 @@
+.gallery {
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 33%;
+    border: solid 3px transparent;
+}
+.gallery:hover {
+    border:solid 3px green;
+}
+.gallery img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+}
