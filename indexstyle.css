@@ -172,7 +172,7 @@ header h1, header p {
     background-color: rgb(246, 225, 172);
 }
 #scaledbox {
-    border: solid 3px rgb(108, 108, 108);
+    border: solid 2px rgb(203, 135, 135);
     box-sizing: border-box;
     width: 100%;
     height: 100%;
