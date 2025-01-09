@@ -66,3 +66,63 @@ header h1, header p {
     color:rgb(62, 145, 109)
 }
 
+.flexcontainer {
+    border: solid 3px darkslategray;
+    width: auto;
+    height: 210px;
+    border-radius: 13px;
+
+    padding: 0px;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    /* flex changes the display of children, but the element itself still takes the entirety of width available */
+    /* display: flex makes the element a flexbox; display: flexbox does not exist! (autosuggestion by vscode because the word appears elsewhere) */
+    display: flex;
+    /* defaul direction is row, but they can be arranged vertically by setting it to column */
+    flex-direction: row;
+    /* justification is the horizontal alignment */
+    /* default is flex-start, justification to the left; and flex-end is justification to the right */
+    /*     justifying content with space-between spreads the elements evenly */
+    /* ... space-around equalises the 'margins' from element to the divisions; i.e. gaps between elements are twice the gaps to the sides */
+    /* ... space-evenly equalises the spaces between elements and borders of the viewport as well */
+    justify-content: start;
+    /* align-tems takes the same options as justification of content */
+    /* but this is justifies them around the cross axis */
+    /* remember that multiple rows is done with a flexbox(dir: col) with row flexboxes */
+    /* so all items inside a flex container are placed in its direction, */
+    /* ... and then the whole row or column is aligned with align-items */
+    /* there is also align-items baseline, which does something with text but is similar to flex-start otherwise*/
+    align-items: flex-start;
+    /* previous information was a bit of a lie, because you could have multiple rows of elements if one row doesn't fit */
+    /* normally the elements would get squished, but wrapping them place them onto the next line */
+    flex-wrap: nowrap;
+    /* to set the alignment of multiple rows of items due to wrapping, use align-content */
+    /* when aligning content to flex-end, use reversed flex-wrap */
+    align-content: flex-start;
+}
+.boxinflex {
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+#box1 {
+    background-color: goldenrod;
+}
+#box2 {
+    background-color: burlywood;
+    align-self: flex-end;
+}
+#box3 {
+    background-color: mistyrose; 
+}
+#box4 {
+    background-color: aquamarine;
+    /* 1 is end, -1 is the beginning */
+    order: -1;
+}
