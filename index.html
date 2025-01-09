@@ -260,7 +260,7 @@
             </div>
             <hr>
             <div>
-                <p>Use flexboxes to order elements in a uniform way, vertically and horizontally</p>
+                <p>Use flexboxes to order elements in a uniform way, vertically and horizontally:</p>
                 <!-- without flex display of the container, the items are just ordered vertically, not in a single line -->
                 <!-- their sizes are the same -->
                 <div class="flexcontainer">
@@ -269,6 +269,37 @@
                     <div class="boxinflex" id="box3">3</div>
                     <div class="boxinflex" id="box4">4</div>
                 </div>
+                <p>A container of boxes is good for showing transformations of elements:</p>
+                <div class="transformcontainer">
+                    <div class="transformbox" id="skew">box</div>
+                    <div class="transformbox" id="rotate">box</div>
+                    <div class="transformbox" id="translate">box</div>
+                    <div class="transformbox" id="scale">box</div>
+                </div>
+                <p>The elements above are all originally the same size and are placed in a row</p>
+                <p>Main transformations provided are:</p>
+                <ul>
+                    <li><i>skew(XY)</i> – can be used to rotate elements, too; values are specified in degrees</li>
+                    <li><i>rotate(XYZ)</i> – rotates elements around the specified axis, most often Z (otherwise, projection of the rotation on the page)</li>
+                    <li><i>translate(XY)</i> – displaces elements</li>
+                    <li><i>scale(XY)</i> – scales elements</li>
+                </ul>
+                <p>Here's a box skewed by -30, 30 degrees:</p>
+                <div class="transformbox" id="skewrotate">box</div>
+                <p>... it also appears slightly scaled</p>
+                <p>Multiple transformations can be applied in order, in the same property!</p>
+                <div class="scalecontainer">
+                    <div id="scaledbox"></div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <p>It all concludes with the animation of elements:</p>
+                <a id="animationlink" href="animation.html">
+                    Animate ✨
+                </a>
+                <br>
+                <br>
             </div>
             <hr>
             <div>
