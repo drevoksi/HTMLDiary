@@ -93,6 +93,7 @@ header h1, header p {
     /* so all items inside a flex container are placed in its direction, */
     /* ... and then the whole row or column is aligned with align-items */
     /* there is also align-items baseline, which does something with text but is similar to flex-start otherwise*/
+    /* does not work with wrap either! */
     align-items: flex-start;
     /* previous information was a bit of a lie, because you could have multiple rows of elements if one row doesn't fit */
     /* normally the elements would get squished, but wrapping them place them onto the next line */
@@ -116,7 +117,8 @@ header h1, header p {
 }
 #box2 {
     background-color: burlywood;
-    align-self: flex-end;
+    /* does not work with wrap */
+    align-self: center;
 }
 #box3 {
     background-color: mistyrose; 
